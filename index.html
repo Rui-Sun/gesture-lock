@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>canvas</title>
+    <title>手势密码</title>
+    <meta charset="utf-8">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
     <style type="text/css">
         #canvas {
             display: block;
-            background-color: #eee;
-            border:solid black 1px;
             margin: 20px auto;
+        }
+        label {
+            display: block;
+        }
+        h2, h4, form, label {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <h2>手势密码</h2>
     <canvas id="canvas">
-      Your browser does not support canvas element.
+        Your browser does not support canvas element.
     </canvas>
+    <h4 id="info">请输入手势密码</h4>
+    <form id="option">
+        <label><input type="radio" name="pattern" value="set" checked >设置密码</label>
+        <label><input type="radio" name="pattern" value="verify">验证密码</label>
+    </form>
+
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
