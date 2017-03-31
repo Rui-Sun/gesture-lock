@@ -20,5 +20,8 @@
     2. 设置密码时，判断第一次输入的密码长度是否达标，若达标则记录在暂存区，等待第二次输入密码。若两次输出一致，将密码存放在localStorage中
     3. 验证密码时，取出localStorage中的密码，和输入密码比较，输出比较结果
 
+#### DEMO
+[demo](https://rui-sun.github.io/gesture-lock/index.html)，pc端请使用浏览器的模拟移动设备功能后打开。
+
 #### 作者
 孙锐 sunrui1992@foxmail.com
